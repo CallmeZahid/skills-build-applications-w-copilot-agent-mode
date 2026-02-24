@@ -1,0 +1,131 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f0f4f9 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  color: #22223b;
+}
+
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #3a3a5a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, .navbar .nav-link, .navbar-brand {
+  color: #5f6fff !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-link:hover, .navbar .nav-link:hover, .navbar-brand:hover {
+  color: #ff6f61 !important;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3a3a5a 0%, #5f6fff 100%) !important;
+  box-shadow: 0 2px 8px rgba(60,60,100,0.08);
+}
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-link.active {
+  color: #ff6f61 !important;
+}
+
+/* Table styles */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(60,60,100,0.06);
+}
+.table thead {
+  background: #5f6fff;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f0f4f9;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #e0e7ff;
+}
+
+/* Button styles */
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #5f6fff 0%, #ff6f61 100%);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #ff6f61 0%, #5f6fff 100%);
+  color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #3a3a5a;
+  font-weight: 700;
+}
+.card-header {
+  background: linear-gradient(90deg, #5f6fff 0%, #ff6f61 100%) !important;
+  color: #fff !important;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,60,100,0.10);
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 16px;
+}
+.modal-header {
+  background: #5f6fff;
+  color: #fff;
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
